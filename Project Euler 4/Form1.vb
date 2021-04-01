@@ -10,7 +10,7 @@
     '*      it too      *
     '* projecteuler.net *
     '********************
-    'Problem 4 is to find the highest palindromic result when multiplying two three-digit numbers together.
+    'Problem 4 is to find the highest palindromic product of two three-digit numbers.
 
     Dim intNum1 As Integer = 100 'first three digit number
     Dim intNum2 As Integer = 100 'second three digit number

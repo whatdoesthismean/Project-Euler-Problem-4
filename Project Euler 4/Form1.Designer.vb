@@ -25,6 +25,7 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.lstResult = New System.Windows.Forms.ListBox()
         Me.lblHighest = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
@@ -33,7 +34,7 @@ Partial Class Form1
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Solve"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'lstResult
@@ -49,29 +50,38 @@ Partial Class Form1
         '
         'lblHighest
         '
-        Me.lblHighest.AutoSize = True
-        Me.lblHighest.Location = New System.Drawing.Point(12, 198)
+        Me.lblHighest.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblHighest.Location = New System.Drawing.Point(13, 146)
         Me.lblHighest.Name = "lblHighest"
-        Me.lblHighest.Size = New System.Drawing.Size(41, 15)
+        Me.lblHighest.Size = New System.Drawing.Size(64, 17)
         Me.lblHighest.TabIndex = 2
-        Me.lblHighest.Text = "Label1"
+        Me.lblHighest.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label1
+        '
+        Me.Label1.Location = New System.Drawing.Point(13, 48)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(74, 98)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "The highest palindromic product of two three-digit numbers is:"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblHighest)
         Me.Controls.Add(Me.lstResult)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Project Euler Problem 4"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Button1 As Button
     Friend WithEvents lstResult As ListBox
     Friend WithEvents lblHighest As Label
+    Friend WithEvents Label1 As Label
 End Class
